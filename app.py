@@ -3,10 +3,10 @@ from flask import Flask,request,jsonify,render_template,redirect,url_for
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 
-with open('E:/Projects/Sentiment and Category/models/Sentiment_Prediction.pkl','rb') as f:
+with open('./models/Sentiment_Prediction.pkl','rb') as f:
     model = pickle.load(f)
 
-with open('E:/Projects/Sentiment and Category/trained_vectorizer.pkl','rb') as f:
+with open('./models/trained_vectorizer.pkl','rb') as f:
     vec = pickle.load(f)
 
 
